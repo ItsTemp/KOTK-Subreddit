@@ -1903,7 +1903,7 @@ div.tagline > .flair-hidden {
     padding: 0;
 }
 .flairselector .flairoptionpane ul li {
-    height: 20px;
+    height: 30px;
     margin: 0 0 2px 0;
     float: left;
 }
@@ -1968,9 +1968,12 @@ div.tagline > .flair-hidden {
 }
 .flairselector li {
     cursor: pointer;
+    border-radius: 6px;
     display: block!important;
     padding-left: 4px;
 }
+
+
 .flairoptionpane {
     overflow-y: scroll;
     height: 100%;
@@ -2007,98 +2010,57 @@ div.tagline > .flair-hidden {
     background-color: rgba(226, 226, 226, 0) !important;
     background-position-y: -68px !important;
     background-position-x: -24px;
+    height: 10px !important;
+    width: 20px !important;
 }
 
 
 .flair-royalty {
   background-color: rgba(226, 226, 226, 0);
-  background-position-y: 3px;
+  background-position-y:2px;
 }
 
 
 /*Master*/
 
 .flair-master {
-  background-color: rgba(226, 226, 226, 0);
-  background-position-y: -20px;
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -33px;
 }
 /*Diamond*/
 
 .flair-diamond {
-  background-color: rgba(226, 226, 226, 0);
-  background-position-y: -45px;
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -63px;
 }
+
+
 /*Platinum*/
 
-.flair.flair-platinum:after {
-    content: "Platinum";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -62px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-platinum {
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -96px;
 }
+
 /*Gold*/
 
-.flair.flair-gold:after {
-    content: "Gold ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -41px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-gold {
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -130px;
 }
+
 /*Silver*/
 
-.flair.flair-silver:after {
-    content: "Silver ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -19px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-silver {
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -163px;
 }
+
 /*Bronze*/
 
-.flair.flair-bronze:after {
-    content: "Bronze ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px 1px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-bronze {
+    background-color: rgba(226, 226, 226, 0);
+    background-position-y: -196px;
 }
 
 /*Devs flairs*/

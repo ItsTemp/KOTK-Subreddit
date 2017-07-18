@@ -2015,6 +2015,26 @@ li .flair-test:after {
   content: "Select this for text";
 }
 
+
+.flair-nye:after {
+content: "Bill Nye The CSS Guy";
+height: 20px;
+width: auto;
+padding-left: 30px;
+line-height: 20px;
+}
+
+.flair-nye {
+  background-image: url(%%flairs%%) !important;
+  background-repeat: no-repeat;
+  background-color: rgba(226, 226, 226, 0);
+  background-position-y:-260px;
+  background-position-x: -6px;
+  background-color: #3F51B5 !important;
+  color: white !important;
+}
+
+
 .flair-test {
 background-color: #e2e2e2;
 height: auto;

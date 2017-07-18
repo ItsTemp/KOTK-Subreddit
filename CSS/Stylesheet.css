@@ -160,7 +160,7 @@ ul.tabmenu li.selected a {
 
 .side {
     /*background-color:#F6F6F6;*/
-    
+
     background: #F6F6F6;
     border: 1px solid #bfbfbf;
     margin-top: 6px;
@@ -1809,6 +1809,81 @@ span.stickied-tagline {
     color: #4aa354 !important;
     border: none;
 }
+
+p.tagline > .flair-hidden {
+    display: none;
+}
+div.tagline > .flair-hidden {
+    display: inline-block;
+}
+
+/* HEADER INFO LINKS */
+
+.side .md blockquote {
+    border: 0;
+    padding: 0;
+    background: none;
+    font-size: 0;
+    position: absolute;
+    top: 23px;
+    left: 378px;
+    z-index: 100;
+}
+.side .md blockquote a {
+    display: inline-block;
+    width: auto;
+    border: 2px solid #890616;
+    margin: 0 3px 3px 0;
+    height: 16px;
+    padding: 4px 10px 0px 6px;
+    background-color: #333;
+    line-height: 100%;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ddd;
+    box-shadow: rgb(0, 0, 0) 0px 0px 2px 0px;
+}
+.side .md blockquote a:hover {
+    background-color: #890616;
+    border-color: #b0081d;
+    color: #fff;
+}
+.side .md blockquote a strong {
+    display: inline-block;
+    margin: -4px 4px -0px -6px;
+    height: 16px;
+    padding: 4px 10px 0px 5px;
+    background-color: #890616;
+    color: #fff;
+}
+/* Fix Wiki TOC */
+
+.wiki > .toc > ul > li a:after {
+    display: none;
+}
+.wiki-page .wiki-page-content {
+    margin: 15px;
+}
+.linkflair-spoiler > .entry > .title {
+    visibility: hidden;
+}
+.linkflair-spoiler > .entry > .title:hover {
+    visibility: visible;
+}
+.linkflair-spoiler > .entry > .title > .linkflairlabel {
+    visibility: visible;
+}
+.linkflair-spoiler > .entry > .title::after {
+    color: #03141a !important;
+    content: "Spoiler (Hover)";
+    visibility: visible;
+}
+.icon-menu a {
+    background: rgba(255, 255, 255, 0) none no-repeat scroll center left;
+}
+
+
 /* Linkflair Selector */
 
 .flairselector {
@@ -1879,6 +1954,176 @@ span.stickied-tagline {
 .flairselector .linkflairlabel:hover {
     opacity: 0.8;
 }
+
+.flairselector.drop-choices.active {
+    height: auto;
+    width: 205px;
+    padding: 4px;
+    margin-left: 10px;
+    top: 50% !important;
+    left: 50% !important;
+    width: 334px!important;
+    transform: translate(-50%, -50%);
+}
+.flairselector li {
+    cursor: pointer;
+    display: block!important;
+    padding-left: 4px;
+}
+.flairoptionpane {
+    overflow-y: scroll;
+    height: 100%;
+    max-height: 180px;
+}
+.flairselector form {
+    border-top: solid 1px gray;
+    clear: both;
+    display: block;
+    padding-top: 4px;
+    text-align: center;
+
+
+/*User flairs*/
+
+}
+.flair {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 6px;
+    color: #5f5f5f!important;
+    font-weight: bold;
+    padding-left: 4px;
+}
+/*Royalty*/
+
+.flair.flair-royalty:after {
+    content: "Royalty";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -130px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Master*/
+
+.flair.flair-master:after {
+    content: "Master";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -109px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Diamond*/
+
+.flair.flair-diamond:after {
+    content: "Diamond";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -84px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Platinum*/
+
+.flair.flair-platinum:after {
+    content: "Platinum";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -62px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Gold*/
+
+.flair.flair-gold:after {
+    content: "Gold ";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -41px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Silver*/
+
+.flair.flair-silver:after {
+    content: "Silver ";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px -19px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+/*Bronze*/
+
+.flair.flair-bronze:after {
+    content: "Bronze ";
+    height: 12px;
+    width: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 27px;
+    padding-right: 4px;
+    display: inline-block;
+    background-image: url(%%ranksheet%%);
+    background-position: -1px 1px;
+    background-size: 25px 150px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+/*Devs flairs*/
+
+
 /* DGC Developer Flair */
 
 .author[href$="/user/0utPatient0"],
@@ -2075,259 +2320,6 @@ span.stickied-tagline {
     display: inline-block;
     background-image: url(%%flair-sheet%%);
     background-position: -200px 0px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*.author[href$="/user/EpicTissues"]:after,
-.author[href$="/user/jhett12321"]:after,
-.author[href$="/user/Wobberjockey"]:after,
-.author[href$="/user/Brownie79"]:after,
-.author[href$="/user/EarThimbles"]:after,
-.author[href$="/user/DarkTexas"]:after,
-.author[href$="/user/matiyarosz"]:after
-{
-	content:"";
-	height:16px;
-	width:48px;
-	margin:0px 0px 2px 2px;
-	display:inline-block;
-	background-image:url(%%flair-sheet%%);
-	background-position:-33px -54px;
-	background-repeat:no-repeat;
-	vertical-align:bottom;
-}*/
-
-p.tagline > .flair-hidden {
-    display: none;
-}
-div.tagline > .flair-hidden {
-    display: inline-block;
-}
-/* HEADER INFO LINKS */
-
-.side .md blockquote {
-    border: 0;
-    padding: 0;
-    background: none;
-    font-size: 0;
-    position: absolute;
-    top: 23px;
-    left: 378px;
-    z-index: 100;
-}
-.side .md blockquote a {
-    display: inline-block;
-    width: auto;
-    border: 2px solid #890616;
-    margin: 0 3px 3px 0;
-    height: 16px;
-    padding: 4px 10px 0px 6px;
-    background-color: #333;
-    line-height: 100%;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    color: #ddd;
-    box-shadow: rgb(0, 0, 0) 0px 0px 2px 0px;
-}
-.side .md blockquote a:hover {
-    background-color: #890616;
-    border-color: #b0081d;
-    color: #fff;
-}
-.side .md blockquote a strong {
-    display: inline-block;
-    margin: -4px 4px -0px -6px;
-    height: 16px;
-    padding: 4px 10px 0px 5px;
-    background-color: #890616;
-    color: #fff;
-}
-/* Fix Wiki TOC */
-
-.wiki > .toc > ul > li a:after {
-    display: none;
-}
-.wiki-page .wiki-page-content {
-    margin: 15px;
-}
-.linkflair-spoiler > .entry > .title {
-    visibility: hidden;
-}
-.linkflair-spoiler > .entry > .title:hover {
-    visibility: visible;
-}
-.linkflair-spoiler > .entry > .title > .linkflairlabel {
-    visibility: visible;
-}
-.linkflair-spoiler > .entry > .title::after {
-    color: #03141a !important;
-    content: "Spoiler (Hover)";
-    visibility: visible;
-}
-.icon-menu a {
-    background: rgba(255, 255, 255, 0) none no-repeat scroll center left;
-}
-/*User flairs*/
-
-.flairselector.drop-choices.active {
-    height: auto;
-    width: 205px;
-    padding: 4px;
-    margin-left: 10px;
-    top: 50% !important;
-    left: 50% !important;
-    width: 334px!important;
-    transform: translate(-50%, -50%);
-}
-.flairselector li {
-    cursor: pointer;
-    display: block!important;
-    padding-left: 4px;
-}
-.flairoptionpane {
-    overflow-y: scroll;
-    height: 100%;
-    max-height: 180px;
-}
-.flairselector form {
-    border-top: solid 1px gray;
-    clear: both;
-    display: block;
-    padding-top: 4px;
-    text-align: center;
-}
-.flair {
-    background-color: #e2e2e2;
-    border: none;
-    border-radius: 6px;
-    color: #5f5f5f!important;
-    font-weight: bold;
-    padding-left: 4px;
-}
-/*Royalty*/
-
-.flair.flair-royalty:after {
-    content: "Royalty";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -130px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Master*/
-
-.flair.flair-master:after {
-    content: "Master";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -109px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Diamond*/
-
-.flair.flair-diamond:after {
-    content: "Diamond";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -84px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Platinum*/
-
-.flair.flair-platinum:after {
-    content: "Platinum";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -62px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Gold*/
-
-.flair.flair-gold:after {
-    content: "Gold ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -41px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Silver*/
-
-.flair.flair-silver:after {
-    content: "Silver ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -19px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
-}
-/*Bronze*/
-
-.flair.flair-bronze:after {
-    content: "Bronze ";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px 1px;
-    background-size: 25px 150px;
     background-repeat: no-repeat;
     vertical-align: middle;
     margin-left: 1px;

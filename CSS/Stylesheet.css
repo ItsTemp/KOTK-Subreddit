@@ -17,6 +17,9 @@ body {
 #header-img {
     margin-right: 0;
     margin-top: 0;
+    position: absolute;
+    top: 42px;
+    z-index: 99;
 }
 #header-img-a {
     position: absolute;
@@ -25,13 +28,14 @@ body {
     margin-left: 20px;
 }
 #header-bottom-left {
-    height: 110px;
+    height: 150px;
     padding: 0px 0 0;
     background-image: url(%%h1z1background%%);
     background-repeat: no-repeat;
     background-color: #10292b;
+    background-size: 100% 100%;
     font-size: xx-small;
-    box-shadow: 0px -0px 6px #555
+    box-shadow: 0px 0px 6px #555;
 }
 #header-bottom-right {
       background-color: rgba(34, 34, 34, 0);
@@ -72,6 +76,7 @@ body {
     width: 320px;
     top: 0px;
     height: 121px;
+    top: 15px;
 }
 .md {
     overflow: auto;

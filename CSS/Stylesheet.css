@@ -1981,54 +1981,39 @@ div.tagline > .flair-hidden {
     display: block;
     padding-top: 4px;
     text-align: center;
-
+}
 
 /*User flairs*/
 
-}
 .flair {
-    background-color: #e2e2e2;
+    content: "";
+    background-image: url(%%flairs%%);
+    background-repeat: no-repeat;
     border: none;
     border-radius: 6px;
-    color: #5f5f5f!important;
+    color: #5f5f5f !important;
     font-weight: bold;
-    padding-left: 4px;
+    height: 20px;
+    width: 80px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1px;
 }
 /*Royalty*/
 
-.flair.flair-royalty:after {
-    content: "Royalty";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -130px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-royalty {
+  background-color: rgba(226, 226, 226, 0);
+  background-position-y: 5px;
 }
+
+
 /*Master*/
 
-.flair.flair-master:after {
-    content: "Master";
-    height: 12px;
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 27px;
-    padding-right: 4px;
-    display: inline-block;
-    background-image: url(%%ranksheet%%);
-    background-position: -1px -109px;
-    background-size: 25px 150px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-left: 1px;
+.flair-master {
+  background-color: rgba(226, 226, 226, 0);
+  background-position-y: -25px;
 }
 /*Diamond*/
 

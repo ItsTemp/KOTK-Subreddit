@@ -2006,15 +2006,6 @@ div.tagline > .flair-hidden {
 }
 /*Royalty*/
 
-.flair-meme {
-    background-color: rgba(226, 226, 226, 0) !important;
-    background-position-y: -68px !important;
-    background-position-x: -24px;
-    height: 10px !important;
-    width: 20px !important;
-}
-
-
 .flair-royalty {
   background-color: rgba(226, 226, 226, 0);
   background-position-y:2px;
@@ -2062,6 +2053,16 @@ div.tagline > .flair-hidden {
     background-color: rgba(226, 226, 226, 0);
     background-position-y: -196px;
 }
+
+/*Random flairs*/
+.flair-meme {
+    background-color: rgba(226, 226, 226, 0) ;
+    background-position-y: -233px ;
+    background-position-x: 8px;
+    height: 10px ;
+    width: 20px ;
+}
+
 
 /*Devs flairs*/
 

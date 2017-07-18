@@ -2002,6 +2002,11 @@ div.tagline > .flair-hidden {
 }
 /*Royalty*/
 
+.flair-meme {
+  background-color: rgba(226, 226, 226, 0);
+  background-position-y: 3px;
+}
+
 .flair-royalty {
   background-color: rgba(226, 226, 226, 0);
   background-position-y: 3px;

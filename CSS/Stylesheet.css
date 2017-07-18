@@ -1768,6 +1768,7 @@ span.stickied-tagline {
     display: inline-block;
     margin: -5px 0 0 5px;
     padding: 2px;
+    padding-right: 5px;
     border-radius: 6px;
     background-image: url(%%flair-sheet%%);
     background-color: #ce211a !important;
@@ -2004,8 +2005,9 @@ div.tagline > .flair-hidden {
 
 .flair-meme {
   background-color: rgba(226, 226, 226, 0);
-  background-position-y: 3px;
+  background-position-y: -69px;
 }
+
 
 .flair-royalty {
   background-color: rgba(226, 226, 226, 0);

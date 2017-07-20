@@ -18,9 +18,3 @@ Currently doing
 - Modernizing sidebar
 - Modernizing post form
 - A bunch of other misc fixes to make sure it the style works on every screen resolution
-
-
-
-
-
-<a href="https://codebeat.co/projects/github-com-itstemp-kotk-subreddit-master"><img alt="codebeat badge" src="https://codebeat.co/badges/a3c83d9b-78e5-4f40-88c9-ec295e7034a1" /></a>

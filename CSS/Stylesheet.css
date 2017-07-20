@@ -2040,6 +2040,30 @@ line-height: 20px;
   background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.flair-mod:after {
+  background-image: url(%%flairs%%) !important;
+  background-repeat: no-repeat;
+  background-color: rgba(226, 226, 226, 0);
+  background-position-y:-260px;
+  background-position-x: -6px;
+content: "Moderator";
+padding-right: 4px;
+height: 20px;
+width: auto;
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 30px;
+line-height: 20px;
+}
+
+.flair-mod {
+  background-color: #3F51B5 !important;
+  color: white !important;
+  background: #06beb6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 .flair-test {
 background-color: #e2e2e2;

@@ -18,3 +18,8 @@ Currently doing
 - Modernizing sidebar
 - Modernizing post form
 - A bunch of other misc fixes to make sure it the style works on every screen resolution
+
+
+Todo
+--------------
+- Re-order the CSS so it's in an order that makes sense.

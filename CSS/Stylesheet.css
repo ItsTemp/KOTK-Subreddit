@@ -1142,13 +1142,14 @@ span.stickied-tagline {
 }
 .commentarea .child .thing {
     box-shadow: none;
-    padding: 8px 8px 8px 2px;
     margin: 8px 0 0;
 }
 .commentarea .comment .midcol {
     margin-top: 2px;
     width: 32px;
     margin-right: 6px;
+    position: relative;
+    top: 13px;
     left: 5px;
     overflow: visible;
 }

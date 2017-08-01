@@ -1127,6 +1127,11 @@ span.stickied-tagline {
 }
 /* Comments */
 
+.comment {
+    background: white;
+    border-radius: 6px !important;
+}
+
 .commentarea .sitetable {
     margin: 0;
     box-shadow: none;
@@ -1144,8 +1149,10 @@ span.stickied-tagline {
     margin-top: 2px;
     width: 32px;
     margin-right: 6px;
+    left: 5px;
     overflow: visible;
 }
+
 /* Comment Stack Behind Parent */
 
 .comment .child,
@@ -1219,6 +1226,40 @@ span.stickied-tagline {
 .green {
     color: #27b062;
     font-weight: 700;
+}
+
+
+
+/*Mod comment*/
+
+.comment[data-author="HaniiBlu"],
+.comment[data-author="omniqix"],
+.comment[data-author="Define_Reality"],
+.comment[data-author="thorax"],
+.comment[data-author="zenlon"],
+.comment[data-author="Cocalord"],
+.comment[data-author="PascalMrHi23"],
+.comment[data-author="TheRealSurvivor"],
+.comment[data-author="DumpsterAim"],
+.comment[data-author="Ashyeee"],
+.comment[data-author="DantebeaR"],
+.comment[data-author="ngu_temp"] {
+    border: 1px solid #1fb693 !important;
+    border-radius: 6px !important;
+    position: relative !important;
+}
+
+/*DBG Comment*/
+
+.comment[data-author="0utPatient0"], .comment[data-author="199_Tacocombo"], .comment[data-author="arclegger"], .comment[data-author="ArtRays"], .comment[data-author="a_sites"], .comment[data-author="Blaydesong"], .comment[data-author="Bradc001"], .comment[data-author="bronstahd"], .comment[data-author="CastoroGamer"], .comment[data-author="craftyjoseph"], .comment[data-author="cuarenta_y_siete"], .comment[data-author="CyclesMcHurtz"], .comment[data-author="d_andrews"], .comment[data-author="Dave1z1"], .comment[data-author="davramSOE"], .comment[data-author="dcurington"], .comment[data-author="DGC_DrDoc"], .comment[data-author="EnoDetah"], .comment[data-author="FiendDev"], .comment[data-author="game_dev_carto"], .comment[data-author="GMPasta"], .comment[data-author="gr8mutato"], .comment[data-author="gratman"], .comment[data-author="H1Ben"], .comment[data-author="H1Gadfly"], .comment[data-author="H1Lan"], .comment[data-author="H1Michael"], .comment[data-author="H1Z1ArtDude"], .comment[data-author="h1z1carson"], .comment[data-author="jcdeebart"], .comment[data-author="jkriegshauser"], .comment[data-author="kemadin"], .comment[data-author="Kalyper"], .comment[data-author="Karalius_H1Z1QA"], .comment[data-author="Ken_Adams_NSA"], .comment[data-author="klanderso"], .comment[data-author="KrymsonVerse"], .comment[data-author="LegionCM"], .comment[data-author="SOE_Legion"], .comment[data-author="Lieutenant_Toast"], .comment[data-author="MMODerelict"], .comment[data-author="Mourde"], .comment[data-author="muldoonx9"], .comment[data-author="NeverNotSnacks"], .comment[data-author="pariahloki"], .comment[data-author="pcarrico"], .comment[data-author="QTrainCobb"], .comment[data-author="Radar_X"], .comment[data-author="RainbirdDBG"], .comment[data-author="reltham"], .comment[data-author="Robertsmania"], .comment[data-author="sgraupmann"], .comment[data-author="Slow_Fat_Ninjah"], .comment[data-author="SklugDaybreak"], .comment[data-author="stellarstrik3"], .comment[data-author="Spytle"], .comment[data-author="ssauraabi"], .comment[data-author="tloch14"], .comment[data-author="The1Wynn"], .comment[data-author="XanderClauss"], .comment[data-author="ngu_temp"] {
+    border: 1px solid #ce211a !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    background: url(%%db%%) white;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    border-radius: 6px !important;
 }
 /* RES Fixes / Nightmode */
 /* Voting Arrows */
@@ -1832,8 +1873,8 @@ div.tagline > .flair-hidden {
     background: none;
     font-size: 0;
     position: absolute;
-    top: 23px;
-    left: 378px;
+    top: 57px;
+    left: 400px;
     z-index: 100;
 }
 .side .md blockquote a {
@@ -2041,27 +2082,28 @@ line-height: 20px;
 }
 
 .flair-mod:after {
-  background-image: url(%%flairs%%) !important;
+  background-image: url(%%eric%%)!important;
+  background-size: 63px;
   background-repeat: no-repeat;
-  background-color: rgba(226, 226, 226, 0);
-  background-position-y:-260px;
-  background-position-x: -6px;
-content: "Moderator";
-padding-right: 4px;
-height: 20px;
-width: auto;
-padding-top: 7px;
-padding-bottom: 7px;
-padding-left: 30px;
-line-height: 20px;
+  background-color: rgba(226,226,226,0);
+  background-position-y: 0px;
+  background-position-x: -11px;
+  content: "Moderator";
+  padding-right: 6px;
+  height: 20px;
+  width: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 41px;
+  line-height: 20px;
 }
 
 .flair-mod {
-  background-color: #3F51B5 !important;
-  color: white !important;
-  background: #06beb6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #3F51B5!important;
+  color: white!important;
+  background: #02AAB0;
+  background: -webkit-linear-gradient(to right,#00CDAC,#02AAB0);
+  background: linear-gradient(to right, #20b395, #1ad489);
 
 }
 

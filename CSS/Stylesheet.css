@@ -2432,3 +2432,35 @@ padding-left: 4px;
     vertical-align: middle;
     margin-left: 1px;
 }
+
+
+
+/*
+
+
+
+RES Support
+
+
+*/
+
+
+
+/* Comments */
+
+.res-commentBoxes.res-commentBoxes-rounded .comment {
+ border-radius: 6px;
+}
+
+.res-commentBoxes .comment .comment {
+    margin: 8px 00 !important;
+}
+
+.res-commentBoxes .comment {
+ padding-top: 15px !important;
+ padding-bottom: 15px !important;
+ }
+
+.res-userHighlight  .tagline .author.submitter {
+  
+}

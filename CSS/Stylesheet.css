@@ -2449,7 +2449,7 @@ RES Support
 /* Comments */
 
 .res-commentBoxes.res-commentBoxes-rounded .comment {
- border-radius: 6px;
+ border-radius: 6px !important;
 }
 
 .res-commentBoxes .comment .comment {
@@ -2462,5 +2462,16 @@ RES Support
  }
 
 .res-userHighlight  .tagline .author.submitter {
-  
+  border-radius: 6px !important;
+  padding: 3px 2px !important;
+  background-color: #24a0ed !important;
+}
+
+.res-userHighlight  .tagline .author.moderator {
+  border-radius: 6px !important;
+  padding: 3px 2px !important;
+}
+
+.res-userHighlight  .tagline .author.submitter:before {
+    content: "Submitter - ";
 }

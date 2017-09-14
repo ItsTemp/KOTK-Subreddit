@@ -424,6 +424,8 @@ ul.tabmenu li.selected a {
 }
 .side .usertext .usertext-body .md > blockquote p {
     margin: 0;
+    position: relative;
+    top: -6px;
 }
 /* Welcome */
 /* Filter */
@@ -1252,7 +1254,7 @@ span.stickied-tagline {
 
 /*DBG Comment*/
 
-.comment[data-author="0utPatient0"], .comment[data-author="199_Tacocombo"], .comment[data-author="arclegger"], .comment[data-author="ArtRays"], .comment[data-author="a_sites"], .comment[data-author="Blaydesong"], .comment[data-author="Bradc001"], .comment[data-author="bronstahd"], .comment[data-author="CastoroGamer"], .comment[data-author="craftyjoseph"], .comment[data-author="cuarenta_y_siete"], .comment[data-author="CyclesMcHurtz"], .comment[data-author="d_andrews"], .comment[data-author="Dave1z1"], .comment[data-author="davramSOE"], .comment[data-author="dcurington"], .comment[data-author="DGC_DrDoc"], .comment[data-author="EnoDetah"], .comment[data-author="FiendDev"], .comment[data-author="game_dev_carto"], .comment[data-author="GMPasta"], .comment[data-author="gr8mutato"], .comment[data-author="gratman"], .comment[data-author="H1Ben"], .comment[data-author="H1Gadfly"], .comment[data-author="H1Lan"], .comment[data-author="H1Michael"], .comment[data-author="H1Z1ArtDude"], .comment[data-author="h1z1carson"], .comment[data-author="jcdeebart"], .comment[data-author="jkriegshauser"], .comment[data-author="kemadin"], .comment[data-author="Kalyper"], .comment[data-author="Karalius_H1Z1QA"], .comment[data-author="Ken_Adams_NSA"], .comment[data-author="klanderso"], .comment[data-author="KrymsonVerse"], .comment[data-author="LegionCM"], .comment[data-author="SOE_Legion"], .comment[data-author="Lieutenant_Toast"], .comment[data-author="MMODerelict"], .comment[data-author="Mourde"], .comment[data-author="muldoonx9"], .comment[data-author="NeverNotSnacks"], .comment[data-author="pariahloki"], .comment[data-author="pcarrico"], .comment[data-author="QTrainCobb"], .comment[data-author="Radar_X"], .comment[data-author="RainbirdDBG"], .comment[data-author="reltham"], .comment[data-author="Robertsmania"], .comment[data-author="sgraupmann"], .comment[data-author="Slow_Fat_Ninjah"], .comment[data-author="SklugDaybreak"], .comment[data-author="stellarstrik3"], .comment[data-author="Spytle"], .comment[data-author="ssauraabi"], .comment[data-author="tloch14"], .comment[data-author="The1Wynn"], .comment[data-author="XanderClauss"] {
+.comment[data-author="0utPatient0"], .comment[data-author="199_Tacocombo"], .comment[data-author="arclegger"], .comment[data-author="ArtRays"], .comment[data-author="a_sites"], .comment[data-author="Blaydesong"], .comment[data-author="Bradc001"], .comment[data-author="bronstahd"], .comment[data-author="CastoroGamer"], .comment[data-author="craftyjoseph"], .comment[data-author="cuarenta_y_siete"], .comment[data-author="CyclesMcHurtz"], .comment[data-author="d_andrews"], .comment[data-author="Dave1z1"], .comment[data-author="davramSOE"], .comment[data-author="dcurington"], .comment[data-author="DGC_DrDoc"], .comment[data-author="EnoDetah"], .comment[data-author="FiendDev"], .comment[data-author="game_dev_carto"], .comment[data-author="GMPasta"], .comment[data-author="gr8mutato"], .comment[data-author="gratman"], .comment[data-author="H1Ben"], .comment[data-author="H1Gadfly"], .comment[data-author="H1Lan"], .comment[data-author="H1Michael"], .comment[data-author="H1Z1ArtDude"], .comment[data-author="h1z1carson"], .comment[data-author="jcdeebart"], .comment[data-author="jkriegshauser"], .comment[data-author="kemadin"], .comment[data-author="Kalyper"], .comment[data-author="Karalius_H1Z1QA"], .comment[data-author="Ken_Adams_NSA"], .comment[data-author="klanderso"], .comment[data-author="KrymsonVerse"], .comment[data-author="LegionCM"], .comment[data-author="SOE_Legion"], .comment[data-author="Lieutenant_Toast"], .comment[data-author="MMODerelict"], .comment[data-author="Mourde"], .comment[data-author="muldoonx9"], .comment[data-author="NeverNotSnacks"], .comment[data-author="pariahloki"], .comment[data-author="pcarrico"], .comment[data-author="QTrainCobb"], .comment[data-author="Radar_X"], .comment[data-author="RainbirdDBG"], .comment[data-author="reltham"], .comment[data-author="Robertsmania"], .comment[data-author="sgraupmann"], .comment[data-author="Slow_Fat_Ninjah"], .comment[data-author="SklugDaybreak"], .comment[data-author="stellarstrik3"], .comment[data-author="Spytle"], .comment[data-author="ssauraabi"], .comment[data-author="tloch14"], .comment[data-author="The1Wynn"], .comment[data-author="XanderClauss"], .comment[data-author="KizmoDev"] {
     border: 1px solid #ce211a !important;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1874,11 +1876,12 @@ div.tagline > .flair-hidden {
     background: none;
     font-size: 0;
     position: absolute;
-    top: 57px;
+    top: 27px;
     left: 400px;
     z-index: 100;
 }
 .side .md blockquote a {
+    position: relative;
     display: inline-block;
     width: auto;
     border: 2px solid #890616;
@@ -1892,6 +1895,7 @@ div.tagline > .flair-hidden {
     font-weight: normal;
     color: #ddd;
     box-shadow: rgb(0, 0, 0) 0px 0px 2px 0px;
+    top: 5px;
 }
 .side .md blockquote a:hover {
     background-color: #890616;
@@ -2293,7 +2297,8 @@ padding-left: 4px;
 .author[href$="/user/ssauraabi"],
 .author[href$="/user/tloch14"],
 .author[href$="/user/The1Wynn"],
-.author[href$="/user/XanderClauss"] {
+.author[href$="/user/XanderClauss"],
+.author[href$="/user/KizmoDev"] {
     background-color: #ce211a !important;
     border-radius: 6px;
     color: #fff !important;
@@ -2359,7 +2364,8 @@ padding-left: 4px;
 .author[href$="/user/ssauraabi"]:after,
 .author[href$="/user/tloch14"]:after,
 .author[href$="/user/The1Wynn"]:after,
-.author[href$="/user/XanderClauss"]:after {
+.author[href$="/user/XanderClauss"]:after,
+.author[href$="/user/KizmoDev"]:after {
     content: "DGC";
     height: auto;
     width: auto;
